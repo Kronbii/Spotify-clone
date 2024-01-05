@@ -3,16 +3,6 @@
     --bggray: #4d4c4c;
 }
 
-@font-face {
-    font-family: spotify;
-    src: url(font/сircular-font/Circular/CircularStd-Black.otf);
-}
-@font-face {
-    font-family: spotify;
-    src: url(font/сircular-font/Circular/CircularStd-Bold.otf);
-    font-weight: bold;
-}
-
 p{
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -24,12 +14,15 @@ div{
 
 body{
     background-color: black;
+    width: 100vw;
+    margin: 10px;
+    overflow-x: hidden;
 }
 
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow: scroll;
+    width: 1000px;
 }
 
 body::-webkit-scrollbar {
