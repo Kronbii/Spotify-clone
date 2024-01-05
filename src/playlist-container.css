@@ -14,8 +14,10 @@
 }
 
 .container-lower-div{
-    background: linear-gradient(0deg, #848b92 80%, #36393b 20%);
+    background: linear-gradient(0deg , #121212 80%, #303235 100%);
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .playlist-tab{
@@ -125,4 +127,37 @@
 .playlist-tab{
     padding-left: 20px;
     margin-top: 40px;
+}
+
+.songs-guide{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.23);
+    padding-bottom: 7px;
+    padding-left: 20px;
+}
+.ntext1, .ntext2, .ntext3{
+    color: #9e9e9e;
+    font-size: 14px;
+    font-weight: bold;
+}
+.hashtag{
+    color: #9e9e9e;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ntext1{
+    margin-right: 385px;
+}
+.ntext2{
+    margin-right: 240px;
+}
+.ntext3{
+    margin-right: 215px;
 }
