@@ -1,0 +1,47 @@
+.playlist-container-header{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.nav-button{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+.nav-button-profile{
+    height: 24px;
+    border-radius: 16px;
+}
+
+.explore-premium-button{
+    padding: 3px 16px 3px 16px;
+    border-radius: 16px;
+    font-weight: bold;
+    border: none;
+    margin-left: 675px;
+    margin-right: 7px;
+    white-space: nowrap;
+}
+.install-app-button{
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px 16px 3px 16px;
+    border: none;
+    border-radius: 16px;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 7px;
+}
+.install-app-button-icon{
+    margin-right: 5px;
+}

@@ -1,0 +1,32 @@
+:root{
+    --sgreen: #30d95e;
+    --bggray: #4d4c4c;
+}
+
+@font-face {
+    font-family: spotify;
+    src: url(font/сircular-font/Circular/CircularStd-Black.otf);
+}
+@font-face {
+    font-family: spotify;
+    src: url(font/сircular-font/Circular/CircularStd-Bold.otf);
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+div{
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: black;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
