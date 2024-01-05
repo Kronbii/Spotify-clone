@@ -98,7 +98,8 @@ div{
 }
 .subinfo-text{
     font-size: 13px;
-    color: #a7a7a7;
+    font-weight: bold;
+    color: rgb(170, 170, 170);
 }
 .pin-icon{
     width: 12px;

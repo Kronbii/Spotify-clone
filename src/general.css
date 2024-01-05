@@ -23,10 +23,19 @@ div{
 }
 
 body{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     background-color: black;
 }
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: scroll;
+}
+
 body::-webkit-scrollbar {
+    display: none;
+}
+
+.playlist-container::-webkit-scrollbar{
     display: none;
 }
