@@ -1,17 +1,22 @@
-:root{
-    --sgreen: #30d95e;
-    --bggray: #4d4c4c;
+:root {
+  --sgreen: #30d95e;
+  --bggray: #4d4c4c;
 }
 
-p, div, body{
-    font-family: 'Nunito', sans-serif;
+p,
+div,
+body {
+  font-family: 'Nunito', sans-serif;
 }
 
-body{
-    background-color: black;
-    margin: 10px;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+body {
+  background-color: black;
+  margin: 10px;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-body::-webkit-scrollbar { display: none; }
+
+body::-webkit-scrollbar {
+  display: none;
+}
