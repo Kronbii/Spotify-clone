@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Spotify UI Clone</title><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!-- Consolidated stylesheet imports -->
+<link rel="stylesheet" href="src/styles/base/general.css">
+<link rel="stylesheet" href="src/styles/layout/containers.css">
+<link rel="stylesheet" href="src/styles/components/header.css">
+<link rel="stylesheet" href="src/styles/components/footer.css">
+<link rel="stylesheet" href="src/styles/pages/home.css">
+<link rel="stylesheet" href="src/styles/pages/library.css">
+<link rel="stylesheet" href="src/styles/pages/playlist.css">
+</head><body>
+<div class="main-container">
+  <div class="left-container" aria-label="Sidebar Navigation">
+    <section class="home-container" aria-label="Primary navigation">
+      <div class="home-upper-div">
+        <div class="home-icon-div"><img class="home-icon" src="src/icons/svgexport-2.svg" alt="Home icon"></div>
+        <div class="home-text-div" role="link" aria-label="Home">Home</div>
+      </div>
+      <div class="home-lower-div">
+        <div class="search-icon-div"><img class="search-icon" src="src/icons/svgexport-3.svg" alt="Search icon"></div>
+        <div class="home-text-div" role="link" aria-label="Search">Search</div>
+      </div>
+    </section>
+
+    <section class="library-container" aria-label="Your Library">
+      <div class="library-top-div">
+        <img class="your-library-icon" src="src/icons/svgexport-5.svg" alt="Library icon">
+        <div class="your-library-text">Your Library</div>
+        <div class="hover-button"><img class="library-top-div-icon" src="src/icons/svgexport-6.svg" alt="Add icon"></div>
+        <div class="hover-button"><img class="library-top-div-icon" src="src/icons/svgexport-7.svg" alt="Arrow icon"></div>
+      </div>
+      <div class="library-middle-div" role="tablist">
+        <button class="library-middle-div-button" role="tab">Playlists</button>
+        <button class="library-middle-div-button" role="tab">Artists</button>
+        <button class="library-middle-div-button" role="tab">Albums</button>
+      </div>
+      <div class="library-bottom-div">
+        <img class="library-bottom-div-icon1" src="src/icons/svgexport-3.svg" alt="Sort icon">
+        <div class="library-bottom-div-text">Recents</div>
+        <img class="library-bottom-div-icon2" src="src/icons/svgexport-9.svg" alt="View icon">
+      </div>
+
+      <!-- Playlist items -->
+      <div class="library-playlist-container">
+        <div class="library-playlist-icon"><img class="library-playlist-image" src="src/song-images/img2.jpeg" alt="Playlist 日本の歌 cover"></div>
+        <div class="library-playlist-info"><div class="library-playlist-name">日本の歌</div><div class="library-playlist-subinfo"><img class="pin-icon" src="src/icons/Pinned.svg" alt="Pinned"> <div class="subinfo-text">Playlist &#183; Ramy</div></div></div>
+      </div>
+      <div class="library-playlist-container">
+        <div class="library-playlist-icon"><img class="library-playlist-image" src="src/song-images/img4.jpeg" alt="Playlist Cairokee cover"></div>
+        <div class="library-playlist-info"><div class="library-playlist-name">Cairokee</div><div class="library-playlist-subinfo"><img class="pin-icon" src="src/icons/Pinned.svg" alt="Pinned"> <div class="subinfo-text">Playlist &#183; Ramy</div></div></div>
+      </div>
+      <div class="library-playlist-container">
+        <div class="library-playlist-icon"><img class="library-playlist-image" src="src/song-images/hopeless-profile.jpg" alt="Playlist Megatronik cover"></div>
+        <div class="library-playlist-info"><div class="library-playlist-name">Megatronik</div><div class="library-playlist-subinfo"><img class="pin-icon" src="src/icons/Pinned.svg" alt="Pinned"> <div class="subinfo-text">Playlist &#183; Ramy</div></div></div>
+      </div>
+      <!-- More playlist items truncated for brevity -->
+    </section>
+  </div>
+
+  <div class="right-container" aria-label="Playlist Main Content">
+    <section class="playlist-container">
+      <div class="container-upper-div">
+        <header class="playlist-container-header" aria-label="Page header">
+          <button class="nav-button" aria-label="Back"><img class="nav-button-icon" src="src/icons/svgexport-24.svg" alt="Back"></button>
+          <button class="nav-button" aria-label="Forward"><img class="nav-button-icon" src="src/icons/svgexport-25.svg" alt="Forward"></button>
+          <button class="explore-premium-button">Explore Premium</button>
+          <button class="install-app-button"><img class="install-app-button-icon" src="src/icons/svgexport-27.svg" alt="Install icon"><div class="install-app-button-text">Install App</div></button>
+          <button class="nav-button" aria-label="Notifications"><img class="nav-button-icon" src="src/icons/svgexport-28.svg" alt="Notifications"></button>
+          <button class="nav-button" aria-label="Profile"><img class="nav-button-profile" src="src/song-images/profile.jpeg" alt="User profile picture"></button>
+        </header>
+        <div class="playlist-tab">
+          <div class="playlist-image-div"><img class="playlist-image" src="src/song-images/hopeless-profile.jpg" alt="Megatronik playlist cover"></div>
+          <div class="playlist-info">
+            <div class="playlist-name"><div class="subtext">Playlist</div>Megatronik</div>
+            <div class="playlist-desc">ramy the best engineer</div>
+            <div class="playlist-subinfo"><img class="user-subinfo-profile" src="src/song-images/profile.jpeg" alt="User profile"> <div class="username">Ramy &#183; 1 like &#183; 37 songs, <span class="playlist-duration">about 2 hr 15min</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-lower-div">
+        <div class="tools-div">
+          <button class="play-button" aria-label="Play"><img class="play-iconn" src="src/icons/svgexport-15.svg" alt="Play"></button>
+          <div class="more-options-button" aria-label="More options"><img class="more-options-icon" src="src/icons/svgexport-30.svg" alt="More"></div>
+          <div class="list">List</div>
+          <img class="list-icon" src="src/icons/svgexport-31.svg" alt="List icon">
+        </div>
+        <div class="songs-guide" aria-label="Song list headers">
+          <div class="hashtag">#</div>
+          <div class="ntext1">Title</div>
+          <div class="ntext2">Album</div>
+          <div class="ntext3">Date added</div>
+          <div><img class="clock" src="src/icons/svgexport-32.svg" alt="Duration"></div>
+        </div>
+        <!-- Example songs (subset) -->
+        <section class="song-block" aria-label="Song row"><div class="song-number">1</div><div class="song-block-image-div"><img class="song-block-image" src="src/song-images/cairokee-img.svg" alt="Ana Negm cover"></div><div class="song-info"><div class="song-info-title">Ana Negm</div><div class="song-info-artist">Cairokee</div></div><div class="song-album">Roma</div><div class="song-date-added">Nov 2, 2023</div><div class="song-like-button"><img class="song-like-button-icon" src="src/icons/svgexport-12.svg" alt="Like"></div><div class="song-duration">4:01</div></section>
+        <section class="song-block" aria-label="Song row"><div class="song-number">2</div><div class="song-block-image-div"><img class="song-block-image" src="src/song-images/mind-over-matter.jpeg" alt="Mind Over Matter cover"></div><div class="song-info"><div class="song-info-title">Mind Over Matter (Reprise)</div><div class="song-info-artist">Young the Giant</div></div><div class="song-album">Mirrorball / Mind Over Matter (Reprise)</div><div class="song-date-added">Dec 2, 2023</div><div class="song-like-button"><img class="song-like-button-icon" src="src/icons/svgexport-12.svg" alt="Like"></div><div class="song-duration">3:50</div></section>
+        <section class="song-block" aria-label="Song row"><div class="song-number">3</div><div class="song-block-image-div"><img class="song-block-image" src="src/song-images/until-i-found-you.jpeg" alt="Until I Found You cover"></div><div class="song-info"><div class="song-info-title">Until I Found You (with Em Beihold) - Em Bei...</div><div class="song-info-artist">Stephen Sanchez, Em Beihold</div></div><div class="song-album">Until I Found You (Em Beihold Version)</div><div class="song-date-added">Dec 2, 2023</div><div class="song-like-button"><img class="song-like-button-icon" src="src/icons/svgexport-12.svg" alt="Like"></div><div class="song-duration">2:56</div></section>
+        <section class="song-block" aria-label="Song row"><div class="song-number">4</div><div class="song-block-image-div"><img class="song-block-image" src="src/song-images/cairokee-img.svg" alt="Nefsy Ahbek cover"></div><div class="song-info"><div class="song-info-title">Nefsy Ahbek</div><div class="song-info-artist">Cairokee, Sara Moullablad</div></div><div class="song-album">Roma</div><div class="song-date-added">Dec 5, 2023</div><div class="song-like-button"><img class="song-like-button-icon" src="src/icons/svgexport-12.svg" alt="Like"></div><div class="song-duration">4:17</div></section>
+        <section class="song-block" aria-label="Song row"><div class="song-number">5</div><div class="song-block-image-div"><img class="song-block-image" src="src/song-images/heart-to-heart.jpeg" alt="Heart To Heart cover"></div><div class="song-info"><div class="song-info-title">Heart To Heart</div><div class="song-info-artist">Mac DeMarco</div></div><div class="song-album">Here Comes The Cowboy</div><div class="song-date-added">Dec 6, 2023</div><div class="song-like-button"><img class="song-like-button-icon" src="src/icons/svgexport-12.svg" alt="Like"></div><div class="song-duration">3:31</div></section>
+      </div>
+    </section>
+  </div>
+</div>
+<footer class="footer-container" aria-label="Player controls">
+  <div class="footer-section-left"><div class="song-image-div"><img class="song-image" src="src/song-images/cairokee-img.svg" alt="Currently playing cover"></div><div class="song-info-div"><div class="song-name">Ana Negm</div><div class="artist-name">Cairokee</div></div><div class="like-button-div"><img class="like-button" src="src/icons/svgexport-12.svg" alt="Like button"></div></div>
+  <div class="footer-section-center"><div class="player-tools-div"><img class="shuffle-icon" src="src/icons/svgexport-13.svg" alt="Shuffle"><img class="back-icon" src="src/icons/svgexport-14.svg" alt="Previous"><button class="play-icon-button" aria-label="Play"><img class="play-icon" src="src/icons/svgexport-15.svg" alt="Play"></button><img class="forward-icon" src="src/icons/svgexport-16.svg" alt="Next"><img class="repeat-icon" src="src/icons/svgexport-17.svg" alt="Repeat"></div><div class="song-progress-div"><div class="current-time">2:58</div><input type="range" min="1" max="100" value="50" class="song-slider" aria-label="Song progress"><div class="total-time">4:01</div></div></div>
+  <div class="footer-section-right"><img class="footer-section-right-icon1" src="src/icons/svgexport-18.svg" alt="Lyrics"><img class="footer-section-right-icon2" src="src/icons/svgexport-19.svg" alt="Queue"><img class="footer-section-right-icon3" src="src/icons/svgexport-20.svg" alt="Connect"><img class="footer-section-right-icon4" src="src/icons/svgexport-21.svg" alt="Picture in picture"><img class="footer-section-right-icon5" src="src/icons/svgexport-22.svg" alt="Volume"><input type="range" min="1" max="100" value="50" class="slider" aria-label="Volume"><img class="footer-section-right-icon6" src="src/icons/svgexport-23.svg" alt="Fullscreen"></div>
+</footer>
+</body></html>
